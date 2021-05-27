@@ -3,4 +3,9 @@
 
     <string name="quiz_text">Quizy!</string>
     <string name="bottom_text">Isn\'t life a collection of weird quizzes with no answers to half of the questions!</string>
+    <string name="button_text">Get Started</string>
+    <string name="login_heading">Stay Connected</string>
+    <string name="login_bottom">Enter your login details here!</string>
+    <string name="signup_btn_text">login</string>
+    <string name="login_btn_text">Already have an account? Login</string>
 </resources>
