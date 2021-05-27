@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Quiz App</string>
+
+    <string name="quiz_text">Quizy!</string>
+    <string name="bottom_text">Isn\'t life a collection of weird quizzes with no answers to half of the questions!</string>
 </resources>
