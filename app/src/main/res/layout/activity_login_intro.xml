@@ -38,6 +38,7 @@
     <Button
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
         android:backgroundTint="#292392"
         android:layout_marginStart="25dp"
         android:layout_marginTop="20dp"
