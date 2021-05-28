@@ -36,26 +36,32 @@
             android:textSize="20sp" />
 
         <EditText
+            android:background="@drawable/edit_text"
             android:id="@+id/etEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:hint="Email" />
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
 
         <EditText
+            android:background="@drawable/edit_text"
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:hint="Password" />
+            android:layout_marginTop="18dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
 
 
         <EditText
             android:id="@+id/etConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:hint="Confirm Password" />
+            android:layout_marginTop="18dp"
+            android:background="@drawable/edit_text"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
 
 
         <Button
@@ -72,6 +78,7 @@
             android:id="@+id/login_option_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:background="@android:color/transparent"
             android:text="@string/login_btn_text"
             android:textAllCaps="false"
