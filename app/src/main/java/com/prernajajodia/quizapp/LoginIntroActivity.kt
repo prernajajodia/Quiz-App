@@ -17,7 +17,8 @@ class LoginIntroActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.getStartedBtn.setOnClickListener {
-            startActivity(Intent(this, SignUpActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
         }
 
 
