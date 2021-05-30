@@ -20,11 +20,11 @@ class DashboardActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.signOutBtn.setOnClickListener {
-            firebaseAuth.signOut()
-            val intent = Intent(this,LoginActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+//        binding.signOutBtn.setOnClickListener {
+//            firebaseAuth.signOut()
+//            val intent = Intent(this,LoginActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
     }
 }

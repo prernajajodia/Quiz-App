@@ -16,4 +16,5 @@
     <string name="sign_up_btn">Sign Up</string>
     <string name="sign_up_btn_text">Already have an account? Log in</string>
     <string name="sign_up_error_toast">Error creating user!</string>
+    <string name="page_title">Dashboard</string>
 </resources>
