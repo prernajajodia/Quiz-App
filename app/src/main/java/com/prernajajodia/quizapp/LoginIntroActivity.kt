@@ -15,12 +15,12 @@ class LoginIntroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val auth = FirebaseAuth.getInstance()
-        if(auth.currentUser != null){
+        if (auth.currentUser != null) {
             Toast.makeText(this, "Already logged in!", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
             finish()
-       }
+        }
 
         binding = ActivityLoginIntroBinding.inflate(layoutInflater)
         val view = binding.root
@@ -33,9 +33,6 @@ class LoginIntroActivity : AppCompatActivity() {
 
 
     }
-
-
-
 
 
 }

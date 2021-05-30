@@ -32,30 +32,31 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-        private fun login() {
+    private fun login() {
 
-            val email = binding.etEmailAddress.text.toString()
-            val password = binding.etPassword.text.toString()
+        val email = binding.etEmailAddress.text.toString()
+        val password = binding.etPassword.text.toString()
 
-            if (email.isBlank() || password.isBlank()) {
-                Toast.makeText(this, "Email or password is blank!", Toast.LENGTH_SHORT).show()
-                return
-            }
-
-            firebaseAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener {
-                    if (it.isSuccessful) {
-                        val intent = Intent(this, LoginActivity::class.java)
-                        startActivity(intent)
-                        finish()
-                    } else {
-                        Toast.makeText(
-                            this,
-                            getString(R.string.sign_up_error_toast),
-                            Toast.LENGTH_LONG
-                        ).show()
-                    }
-                }
+        if (email.isBlank() || password.isBlank()) {
+            Toast.makeText(this, "Email or password is blank!", Toast.LENGTH_SHORT).show()
+            return
         }
+
+        firebaseAuth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener {
+
+                if (it.isSuccessful) {
+                    val intent = Intent(this, DashboardActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                } else {
+                    Toast.makeText(
+                        this,
+                        it.exception?.message,
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            }
     }
+}
 
