@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
 
 
-        binding.loginOptionBtn.setOnClickListener {
+        binding.loginBtn.setOnClickListener {
             login()
         }
 
@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
                 return
             }
 
-            firebaseAuth.createUserWithEmailAndPassword(email, password)
+            firebaseAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener {
                     if (it.isSuccessful) {
                         val intent = Intent(this, LoginActivity::class.java)
