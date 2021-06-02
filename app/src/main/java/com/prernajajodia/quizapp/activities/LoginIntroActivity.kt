@@ -1,4 +1,4 @@
-package com.prernajajodia.quizapp
+package com.prernajajodia.quizapp.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

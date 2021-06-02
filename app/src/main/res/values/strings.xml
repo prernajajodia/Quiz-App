@@ -21,4 +21,6 @@
     <string name="menu_item_follow_us">Follow us</string>
     <string name="menu_item_signout">Signout</string>
     <string name="menu_item_know">Know more</string>
+    <string name="text_recycler_view">Quiz Day 1</string>
+
 </resources>

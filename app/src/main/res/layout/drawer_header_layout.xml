@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="250dp"
-    android:background="#E4A0BB"
+    android:background="#292392"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_marginTop="16dp"
-        android:paddingBottom="18dp"
+        android:paddingBottom="20dp"
         android:paddingLeft="100dp"
         android:text="@string/dashboard_sub_heading"
         android:textAllCaps="true"

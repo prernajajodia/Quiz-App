@@ -1,9 +1,9 @@
-package com.prernajajodia.quizapp
+package com.prernajajodia.quizapp.activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.prernajajodia.quizapp.databinding.ActivityLoginBinding
 
@@ -19,7 +19,6 @@ class LoginActivity : AppCompatActivity() {
         setContentView(view)
 
         firebaseAuth = FirebaseAuth.getInstance()
-
 
         binding.loginBtn.setOnClickListener {
             login()

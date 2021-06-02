@@ -1,11 +1,11 @@
-package com.prernajajodia.quizapp
+package com.prernajajodia.quizapp.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.prernajajodia.quizapp.R
 import com.prernajajodia.quizapp.databinding.ActivitySignUpBinding
 
 class SignUpActivity : AppCompatActivity() {
