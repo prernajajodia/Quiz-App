@@ -44,7 +44,7 @@ class DashboardActivity : AppCompatActivity() {
     }
 
     private fun setUpRecyclerView() {
-        adapter = QuizAdapter(quizList)
+        adapter = QuizAdapter(this, quizList)
         binding.quizRecyclerView.layoutManager = GridLayoutManager(this, 2)
         binding.quizRecyclerView.adapter = adapter
     }

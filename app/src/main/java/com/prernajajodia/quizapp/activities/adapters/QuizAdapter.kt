@@ -1,11 +1,13 @@
 package com.prernajajodia.quizapp.activities.adapters
 
+import android.content.Context
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
@@ -15,7 +17,7 @@ import com.prernajajodia.quizapp.activities.utils.ColorPicker
 import com.prernajajodia.quizapp.activities.utils.IconPicker
 
 
-class QuizAdapter(private val quizzes: List<Quiz>) :
+class QuizAdapter(private val context: Context, private val quizzes: List<Quiz>) :
     RecyclerView.Adapter<QuizAdapter.QuizViewHolder>() {
 
 
@@ -28,6 +30,10 @@ class QuizAdapter(private val quizzes: List<Quiz>) :
         holder.textViewTitle.text = quizzes[position].title
         holder.cardContainer.setCardBackgroundColor(Color.parseColor(ColorPicker.getColor()))
         holder.iconView.setImageResource(IconPicker.getIcon())
+        holder.itemView.setOnClickListener {
+            Toast.makeText(context, quizzes[position].title, Toast.LENGTH_LONG).show()
+        }
+
     }
 
     override fun getItemCount(): Int {
